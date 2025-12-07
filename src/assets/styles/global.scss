@@ -1,11 +1,25 @@
 @import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
   background-color: $primary-white;
+}
+
+h1 {
+  @include mobile-h1;
+
+  @media (min-width: $desktop-bp) {
+  }
+}
+
+p {
+  @include mobile-body;
 }

@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables.scss";
+
+@mixin mobile-h1 {
+  font-size: $mobile-font-size-h1;
+  font-weight: $font-weight-bold;
+  letter-spacing: $mobile-letter-spacing-h1;
+  line-height: $mobile-line-height-h1;
+  text-transform: uppercase;
+}
+
+@mixin mobile-body {
+  font-size: $mobile-font-size-body;
+  font-weight: $font-weight-regular;
+  line-height: $mobile-line-height-body;
+  opacity: 0.6;
+}
+
+@mixin button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10.5rem;
+  height: 1rem;
+  font-size: $mobile-font-size-button;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-color: $primary-black;
+  color: $primary-white;
+  text-transform: uppercase;
+  border: none;
+}

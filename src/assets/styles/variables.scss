@@ -6,3 +6,35 @@ $primary-grey: #dfdfdf;
 $accent-1: #ffc593;
 $accent-2: #bc7198;
 $accent-3: #5a77ff;
+
+$tablet-bp: 768px;
+$desktop-bp: 1280px;
+
+//font size
+
+$mobile-font-size-h1: 2rem;
+$mobile-font-size-body: 0.9375rem;
+$mobile-font-size-button: 0.75rem;
+
+$desktop-font-size-h1: 2.5rem;
+$desktop-font-size-h2: 1.5rem;
+$desktop-font-size-h3: 1.125rem;
+$desktop-font-size-body: 0.75rem;
+
+//letter spacing
+$mobile-letter-spacing-h1: 3.3px;
+$desktop-letter-spacing-h1: 4.17px;
+$desktop-letter-spacing-body: 2px;
+
+//line height
+$mobile-line-height-h1: 2.5rem;
+$mobile-line-height-body: 1.5625rem;
+$desktop-line-height-h1: 3rem;
+$desktop-line-height-h2: 1.5625rem;
+$desktop-line-height-h3: 1.5625rem;
+$desktop-line-height-body: 1rem;
+
+//font weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
