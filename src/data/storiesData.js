@@ -31,8 +31,8 @@ import runningFreeDesktop from "../assets/images/stories/desktop/running-free.jp
 import behindTheWavesMobile from "../assets/images/stories/mobile/behind-the-waves.jpg";
 import behindTheWavesDesktop from "../assets/images/stories/desktop/behind-the-waves.jpg";
 
-import calmWaterMobile from "../assets/images/stories/mobile/calm-water.jpg";
-import calmWaterDesktop from "../assets/images/stories/desktop/calm-water.jpg";
+import calmWaterMobile from "../assets/images/stories/mobile/calm-waters.jpg";
+import calmWaterDesktop from "../assets/images/stories/desktop/calm-waters.jpg";
 
 import milkyWayMobile from "../assets/images/stories/mobile/milky-way.jpg";
 import milkyWayDesktop from "../assets/images/stories/desktop/milky-way.jpg";

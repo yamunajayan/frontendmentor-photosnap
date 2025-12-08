@@ -1,15 +1,19 @@
 import React from "react";
 import PhotoCard from "../PhotoCard/PhotoCard";
-import photo from "../../assets/images/stories/mobile/mountains.jpg";
+import { stories } from "../../data/storiesData";
+import "./HomeGallery.scss";
 
 const HomeGallery = () => {
   return (
-    <article>
-      <PhotoCard
-        image={photo}
-        title="The Mountains"
-        photographer="John Appleseed"
-      />
+    <article className="home-gallery">
+      {stories.slice(0, 4).map((story) => (
+        <PhotoCard
+          key={story.id}
+          image={story.image.mobile}
+          title={story.title}
+          photographer={story.photographer}
+        />
+      ))}
     </article>
   );
 };

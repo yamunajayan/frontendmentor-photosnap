@@ -1,0 +1,22 @@
+@use "../../assets/styles/variables" as vars;
+@use "../../assets/styles/mixins" as mix;
+
+.home-gallery {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: vars.$tablet-bp) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & > * {
+      width: 50%; // two per row
+    }
+  }
+
+  @media (min-width: vars.$desktop-bp) {
+    & > * {
+      width: 25%; // two per row
+    }
+  }
+}

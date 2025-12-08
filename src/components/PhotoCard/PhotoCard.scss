@@ -13,6 +13,10 @@
   justify-content: flex-end;
   padding: 2rem 1.5rem;
 
+  @media (min-width: vars.$tablet-bp) {
+    height: 31.25rem;
+  }
+
   &__line {
     height: 2px;
     opacity: 0.25;
