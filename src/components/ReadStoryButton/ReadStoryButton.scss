@@ -1,0 +1,17 @@
+@use "../../assets/styles/variables" as vars;
+@use "../../assets/styles/mixins" as mix;
+
+.read-story-button {
+  border: none;
+  background: none;
+  color: vars.$primary-white;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-size: vars.$mobile-font-size-button;
+    font-weight: vars.$font-weight-bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
