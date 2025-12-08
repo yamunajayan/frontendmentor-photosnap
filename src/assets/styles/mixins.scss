@@ -6,6 +6,12 @@
   letter-spacing: $mobile-letter-spacing-h1;
   line-height: $mobile-line-height-h1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-bp) {
+    font-size: $desktop-font-size-h1;
+    letter-spacing: $desktop-letter-spacing-h1;
+    line-height: $desktop-line-height-h1;
+  }
 }
 
 @mixin mobile-body {
