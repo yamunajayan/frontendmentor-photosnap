@@ -1,0 +1,21 @@
+.feature-card {
+  height: 14.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 28rem;
+
+  &__image {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.25rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../../assets/styles/variables" as vars;
+@use "../../assets/styles/mixins" as mix;
+
+.home-features {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+
+  @media (min-width: vars.$tablet-bp) {
+    padding: 6rem 1.5rem;
+  }
+
+  @media (min-width: vars.$desktop-bp) {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
