@@ -1,0 +1,8 @@
+@use "../../assets/styles/variables" as vars;
+@use "../../assets/styles/mixins" as mix;
+
+.get-invite-button {
+  @include mix.button-arrow;
+  background-color: vars.$primary-black;
+  color: vars.$primary-white;
+}
