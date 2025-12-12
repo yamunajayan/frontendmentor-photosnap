@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
   }
 
   &__logo {
@@ -38,9 +39,18 @@
   &__links {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
+    font-size: 0.75rem;
+    color: vars.$primary-white;
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    color: vars.$primary-white;
+    opacity: 1;
+    font-weight: vars.$font-weight-bold;
   }
 
   &__bottom {

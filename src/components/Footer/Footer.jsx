@@ -53,10 +53,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__links">
-          <p>HOME</p>
-          <p>STORIES</p>
-          <p>FEATURES</p>
-          <p>PRICING</p>
+          <p className="footer__text">HOME</p>
+          <p className="footer__text">STORIES</p>
+          <p className="footer__text">FEATURES</p>
+          <p className="footer__text">PRICING</p>
         </div>
       </div>
       <div className="footer__bottom">
