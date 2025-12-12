@@ -4,12 +4,40 @@
 .footer {
   background-color: vars.$primary-black;
   color: vars.$primary-white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 33rem;
-  justify-content: space-between;
-  padding: 4rem 1.5rem;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 33rem;
+    padding: 4rem 1.5rem;
+    max-width: 1200px; // content capped
+    width: 100%;
+    margin: 0 auto; // centers the content
+
+    @media (min-width: vars.$tablet-bp) {
+      flex-direction: row;
+      padding: 4rem 2.5rem;
+      height: 18rem;
+    }
+
+    @media (min-width: vars.$desktop-bp) {
+      padding: 4rem 0rem;
+    }
+  }
+
+  &__container {
+    @media (min-width: vars.$tablet-bp) {
+      height: 100%;
+    }
+
+    @media (min-width: vars.$desktop-bp) {
+      display: flex;
+      gap: 7rem;
+      align-items: center;
+    }
+  }
 
   &__logo-container {
     display: flex;
@@ -17,14 +45,12 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-  }
 
-  &__logo {
-    fill: #fff;
-  }
-
-  &__icon {
-    fill: #fff;
+    @media (min-width: vars.$tablet-bp) {
+      align-items: flex-start;
+      height: 100%;
+      justify-content: space-between;
+    }
   }
 
   &__list {
@@ -34,6 +60,10 @@
     margin: 1.5rem 0;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: vars.$tablet-bp) {
+      margin: 0;
+    }
   }
 
   &__links {
@@ -44,6 +74,33 @@
     justify-content: center;
     font-size: 0.75rem;
     color: vars.$primary-white;
+
+    @media (min-width: vars.$tablet-bp) {
+      display: none;
+      padding-top: 1rem;
+    }
+
+    @media (min-width: vars.$desktop-bp) {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      padding-top: 0;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &--tablet {
+      display: none;
+      @media (min-width: vars.$tablet-bp) {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+      }
+
+      @media (min-width: vars.$desktop-bp) {
+        display: none;
+      }
+    }
   }
 
   &__text {
@@ -59,5 +116,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: vars.$tablet-bp) {
+      height: 100%;
+      align-items: flex-end;
+    }
   }
 }

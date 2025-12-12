@@ -8,60 +8,55 @@ import instagramLogo from "../../assets/images/shared/desktop/instagram.svg";
 import GetInviteButton from "../GetInviteButton/GetInviteButton";
 import "./Footer.scss";
 
+const navLinks = ["HOME", "STORIES", "FEATURES", "PRICING"];
+const socialIcons = [
+  { src: facebookLogo, alt: "Facebook" },
+  { src: youtubeLogo, alt: "YouTube" },
+  { src: twitterLogo, alt: "Twitter" },
+  { src: pinterestLogo, alt: "Pinterest" },
+  { src: instagramLogo, alt: "Instagram" },
+];
+
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>
-        <div className="footer__logo-container">
-          <img src={logo} alt="logo" className="footer__logo" />
-          <ul className="footer__list">
-            <li>
-              <img
-                src={facebookLogo}
-                alt="facebook logo"
-                className="footer__icon"
-              />
-            </li>
-            <li>
-              <img
-                src={youtubeLogo}
-                alt="youtube logo"
-                className="footer__icon"
-              />
-            </li>
-            <li>
-              <img
-                src={twitterLogo}
-                alt="twitter logo"
-                className="footer__icon"
-              />
-            </li>
-            <li>
-              <img
-                src={pinterestLogo}
-                alt="pinterest logo"
-                className="footer__icon"
-              />
-            </li>
-            <li>
-              <img
-                src={instagramLogo}
-                alt="instagram logo"
-                className="footer__icon"
-              />
-            </li>
-          </ul>
+      <div className="footer__inner">
+        <div className="footer__container">
+          <div className="footer__logo-container">
+            <div>
+              {/* Logo */}
+              <img src={logo} alt="logo" className="footer__logo" />
+              {/* Nav links — one block only */}
+              <div className="footer__links footer__links--tablet">
+                {navLinks.map((link) => (
+                  <p className="footer__text" key={link}>
+                    {link}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <ul className="footer__list">
+              {socialIcons.map(({ src, alt }, index) => (
+                <li key={index}>
+                  <img src={src} alt={`${alt} icon`} className="footer__icon" />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="footer__links">
+            {navLinks.map((link) => (
+              <p className="footer__text" key={link}>
+                {link}
+              </p>
+            ))}
+          </div>
         </div>
-        <div className="footer__links">
-          <p className="footer__text">HOME</p>
-          <p className="footer__text">STORIES</p>
-          <p className="footer__text">FEATURES</p>
-          <p className="footer__text">PRICING</p>
+        <div className="footer__bottom">
+          <GetInviteButton />
+          <p className="footer__copyright">
+            Copyright 2019. All Rights Reserved
+          </p>
         </div>
-      </div>
-      <div className="footer__bottom">
-        <GetInviteButton />
-        <p className="footer__copyright">© 2020. All Rights Reserved</p>
       </div>
     </footer>
   );
